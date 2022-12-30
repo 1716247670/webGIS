@@ -1,0 +1,88 @@
+html,
+			body,
+			#viewDiv {
+				padding: 0;
+				margin: 0;
+				height: 100%;
+				width: 100%;
+			}
+			#infoDiv {
+				position: absolute;
+				top: 15px;
+				left: 60px;
+			}
+
+			#infoDiv input {
+				border: none;
+				box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px;
+			}
+			#title {
+				position: absolute;
+				top: 15px;
+				left: 40%;
+				transform: translate(-50%);
+				padding: 0 20px;
+				background-color: rgba(255, 255, 255, 0.5);
+				z-index: 0;
+			}
+			.chartPanel {
+                visibility:hidden;
+				position: absolute;
+				top: 100px;
+				left: 20px;
+				background-color: rgba(0, 0, 0, 0.5);
+				padding: 10px;
+			}
+
+			#echartDiv {
+				width: 400px;
+				height: 360px;
+				background-color: rgba(255, 255, 255, 0.8);
+			}
+			.panel-container {
+				position: relative;
+				width: 100%;
+				height: 100%;
+			}
+
+			.panel-side {
+				padding: 2px;
+				box-sizing: border-box;
+				width: 300px;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				right: 0;
+				color: #fff !important;
+				background-color: rgba(0, 0, 0, 0.6) !important;
+				overflow: auto;
+				z-index: 60;
+			}
+
+			.panel-side h3 {
+				padding: 0 20px;
+				margin: 20px 0;
+			}
+
+			.panel-side ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+
+			.panel-side li {
+				list-style: none;
+				padding: 10px 20px;
+			}
+
+			.panel-result {
+				cursor: pointer;
+				margin: 2px 0;
+				background-color: rgba(0, 0, 0, 0.3);
+			}
+
+			.panel-result:hover,
+			.panel-result:focus {
+				color: orange;
+				background-color: rgba(0, 0, 0, 0.75);
+			}

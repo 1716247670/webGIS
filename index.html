@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>中国人口基本情况</title>
+
+		<link rel="stylesheet" href="./css/style.css">
+
+		<link rel="stylesheet" href="https://js.arcgis.com/4.19/esri/themes/light/main.css" />
+		
+	</head>
+
+	<body>
+		<div class="panel-container">
+			<div class="panel-side esri-widget">
+				<h3>中国人口基本情况——地级市</h3>
+				<ul id="nyc_graphics">
+					<li>Loading&hellip;</li>
+				</ul>
+			</div>
+			<div id="viewDiv">
+				<div class="chartPanel">
+					<div id="echartDiv"></div>
+				</div>
+			</div>
+			<div id="infoDiv">
+				<input
+					class="esri-component esri-widget--button esri-widget esri-interactive"
+					type="button"
+					id="switch-btn"
+					value="3D"
+				/>
+			</div>
+			<div id="title">
+				<h1>中国第七次人口普查基本情况</h1>
+			</div>
+		</div>
+		<!-- 引入 echarts.js -->
+		<script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
+
+		<script src="https://js.arcgis.com/4.19/"></script>
+
+		<script src="./js/index.js"></script>
+	</body>
+</html>
